@@ -1,0 +1,128 @@
+/*
+Main colors: #2B5FBB ##BD2640 #FF7D04
+Icon colors: #0072b1
+*/
+
+/* Shared styling */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	font-family: Lato, "Open Sans", "Source Sans Pro", "sans-serif";
+	color: #333;
+	font-size: 20px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #999999;
+}
+
+a:hover {
+	color: #ff7d04;
+}
+
+button {
+	display: inline-block;
+	padding: 1rem 2.2rem;
+	border-radius: 0.2rem;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+h1 {
+	font-size: 48px;
+	font-weight: 600;
+	color: #777777;
+}
+
+small {
+	font-size: small;
+}
+
+#bing {
+	color: #2b5fbb;
+}
+
+/* Header */
+.navbar {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	padding: 0.5rem 3%;
+}
+
+.headernav {
+	display: flex;
+	justify-content: space-around;
+}
+
+/* About me section */
+.section-about {
+	min-width: 100vw;
+	min-height: 80vh;
+	padding: 0 3% 0;
+	margin-top: 3%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.profile-img {
+	width: 40%;
+	max-width: 800px;
+	border: 0px;
+}
+
+.btn-about {
+	margin: 1rem 0;
+	background-color: #fff;
+	font-weight: 500;
+	border: 1px solid #bd2640;
+	color: #bd2640;
+}
+
+.btn-about:hover {
+	background-color: #bd2640;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+/* Footer */
+.footernav {
+	background-color: #333;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 2fr 2fr 1fr;
+	align-items: center;
+	text-align: center;
+	padding: 1rem 0;
+	color: #999999;
+}
+
+.footerlist {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.nav-icon {
+	color: #0072b1;
+}
+
+.nav-icon:hover {
+	transform: scale(1.5);
+}
