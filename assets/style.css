@@ -47,8 +47,18 @@ h1 {
 	color: #777777;
 }
 
+h2 {
+	font-size: 36px;
+	color: #999999;
+}
+
 small {
 	font-size: small;
+}
+
+.subtitle {
+	font-family: "Source Sans Pro";
+	font-weight: 500;
 }
 
 #bing {
@@ -77,6 +87,10 @@ small {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.intro {
+	line-height: 4rem;
 }
 
 .profile-img {
@@ -126,3 +140,5 @@ small {
 .nav-icon:hover {
 	transform: scale(1.5);
 }
+
+/* Media Query */
