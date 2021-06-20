@@ -118,14 +118,13 @@ small {
 	margin: 3rem 0;
 	padding: 2rem;
 	border: none;
-	color: #bd2640;
 	box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
 	font-weight: 500;
 	font-size: 1.2rem;
 }
 
 .btn-about:hover {
-	background-color: #bd2640;
+	background: linear-gradient(135deg, rgba(0, 0, 0, 0.40), rgba(255, 255, 255, 0.25));
 	border: 1px solid #fff;
 	color: #fff;
 }
