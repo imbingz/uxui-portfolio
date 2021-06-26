@@ -12,7 +12,7 @@ Icon colors: #0072b1
 }
 
 body {
-	height: 100vh;
+	height: 100%;
 	font-family: Lato, "Open Sans", "Source Sans Pro", "sans-serif";
 	color: #333;
 	font-size: 20px;
@@ -129,6 +129,89 @@ small {
 	color: #fff;
 }
 
+/* section-projects */
+
+.section-projects {
+	padding: 3%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 7rem;
+	/* min-height: 100%; */
+}
+
+.project-card {
+	display: flex;
+	flex-direction: column;
+}
+
+.project-image {
+	margin-top: 0.8rem;
+	height: 320px;
+	width: 450px;
+}
+
+.project-image > img {
+	height: 320px;
+	width: 450px;
+}
+.project-card-title {
+	color: #999999;
+	margin: 0.5rem 0;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.project-card-btn {
+	margin: 0.5rem 0 2.5rem;
+	border-radius: 25px;
+	background: linear-gradient(135deg, rgba(0, 0, 0, 0.08), rgba(255, 255, 255, 0.05));
+	border: none;
+	box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+	font-weight: 500;
+	font-size: 1rem;
+}
+
+.project-card-btn:hover {
+	background: linear-gradient(135deg, rgba(0, 0, 0, 0.40), rgba(255, 255, 255, 0.25));
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+/* Section-Skills */
+.section-skills {
+	padding: 1rem 3% 5rem;
+	display: flex;
+	justify-content: center;
+}
+
+.skill-wrapper {
+	background: linear-gradient(135deg, rgba(0, 0, 0, 0.08), rgba(255, 255, 255, 0.05));
+	/* border: 1px red solid; */
+	border: none;
+	width: 280px;
+	height: 280px;
+	border-radius: 50%;
+	box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+	margin: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.skill-wrapper > h6 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	color: #bd2640;
+}
+
+.skill-wrapper > ul li {
+	margin-bottom: 0.15rem;
+	color: #555;
+	list-style-type: disc;
+}
+
 /* Footer */
 .footernav {
 	background-color: #333;
@@ -158,3 +241,24 @@ small {
 }
 
 /* Media Query */
+@media only screen and (min-width: 1300px) {
+	.section-projects {
+		min-height: 100vh;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.section-skills {
+		padding-top: 15%;
+	}
+	.section-skills-wrapper {
+		min-height: 100vh;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+}
