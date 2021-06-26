@@ -99,15 +99,14 @@ small {
 	box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
 	border-radius: 50px;
 	height: 200px;
-	width: 700px;
+	width: 630px;
 	line-height: 4rem;
 	padding-left: 3rem;
 }
 
 .profile-img {
-	width: 50%;
-	max-width: 800px;
-	border: 0px;
+	width: 45%;
+	max-width: 700px;
 }
 
 .btn-about {
@@ -121,6 +120,7 @@ small {
 	box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
 	font-weight: 500;
 	font-size: 1.2rem;
+	color: #bd2640;
 }
 
 .btn-about:hover {
@@ -137,7 +137,6 @@ small {
 	flex-direction: column;
 	align-items: center;
 	padding-bottom: 7rem;
-	/* min-height: 100%; */
 }
 
 .project-card {
@@ -147,8 +146,6 @@ small {
 
 .project-image {
 	margin-top: 0.8rem;
-	height: 320px;
-	width: 450px;
 }
 
 .project-image > img {
@@ -156,20 +153,22 @@ small {
 	width: 450px;
 }
 .project-card-title {
-	color: #999999;
+	/* color: #777; */
 	margin: 0.5rem 0;
 	font-size: 1.2rem;
-	font-weight: 600;
+	font-weight: 500;
+	padding-left: 2rem;
 }
 
 .project-card-btn {
-	margin: 0.5rem 0 2.5rem;
+	margin: 0.5rem 2rem 2.5rem;
 	border-radius: 25px;
 	background: linear-gradient(135deg, rgba(0, 0, 0, 0.08), rgba(255, 255, 255, 0.05));
 	border: none;
 	box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
 	font-weight: 500;
 	font-size: 1rem;
+	color: #bd2640;
 }
 
 .project-card-btn:hover {
@@ -193,7 +192,7 @@ small {
 	height: 280px;
 	border-radius: 50%;
 	box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
-	margin: 2rem;
+	margin: 2.5rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -202,6 +201,7 @@ small {
 
 .skill-wrapper > h6 {
 	font-size: 1.5rem;
+	font-weight: 500;
 	margin-bottom: 1rem;
 	color: #bd2640;
 }
@@ -243,22 +243,32 @@ small {
 /* Media Query */
 @media only screen and (min-width: 1300px) {
 	.section-projects {
-		min-height: 100vh;
+		height: 90vh;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-evenly;
 		align-items: center;
 	}
+
+	.project-image > img {
+		height: 280px;
+		width: 380px;
+	}
 }
 
 @media only screen and (min-width: 768px) {
 	.section-skills {
-		padding-top: 15%;
+		margin-top: 15%;
 	}
 	.section-skills-wrapper {
-		min-height: 100vh;
+		/* background-color: #2b5fbb; */
+		height: 60vh;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: center;
+	}
+
+	.skill-wrapper {
+		margin: 0 3rem;
 	}
 }
